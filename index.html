@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> metter box </title>
+	<!---meta------>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!----bootstrap cdn------->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+	<!----font awesome cdn----->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!---custom css---->
+	<link rel="stylesheet" href="matter.css">
+</head>
+
+<body>
+
+	<!------toggle------>
+
+	<header>
+		<span>
+			<i class="fa fa-globe" aria-hidden="true"></i>
+			<ul>
+				<li class="colors" id="default" data-color="#005F60"></li>
+				<li class="colors" id="blue" data-color="#00C9D7"></li>
+				<li class="colors" id="red" data-color="#FF6D76"></li>	
+			</ul>
+		</span>
+	</header>
+
+	<!------toggle------>
+
+
+	<!------main------->
+	<div class="container">
+		<div class="wrapper bg-light">
+			<!----top----->
+			<div class="row">
+				<div class="col-12 text-center">
+					<div class="title">
+						<a href="#">
+							<img src="logo.png" alt="">
+						</a>
+						<div class="account">
+							<h6 class="name">Samir Labib</h6>
+							<a href="#">Account settings</a>
+							<!-- <p>Account settings</p> -->
+						</div>
+						<i class="fa fa-user" class="user"></i>
+					</div>
+				</div>
+			</div>
+
+			<!----Arrow----->
+			<div class="row m-left mb-3 mt-0">
+				<div class="box">
+					<div class="arrow">
+						<h4>Step</h4>
+					</div>
+					<div class="arrow-text">
+						1
+					</div>
+				</div>
+
+				<div class="box">
+					<div class="arrow2">
+						<h4>Step</h4>
+					</div>
+					<div class="arrow-text2">
+						2
+					</div>
+				</div>
+			</div>
+
+			<!-----form----->
+			<div class="row">
+				<div class="col-lg-8 col-md-10 col-sm-11 offset-lg-2 offset-md-1 mt-3">
+					<ul id="accordion" class="accordion">
+						<li>
+							<div class="link">
+								<i class="fa fa-hand-pointer-o" class="icon"></i>
+								<h3>Service Selection</h3>
+							</div>
+
+							<ul class="submenu">
+
+								<h6 class="choose ml-3">Choose your bundled legal service</h6>
+								<div class="checkbox ml-5">
+
+									<form action="#">										
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+											value="option1">
+											<label class="form-check-label" for="inlineRadio1">I'm Selling</label>
+										</div>
+										<div class="form-check form-check-inline ml-lg-2 ml-md-0 ml-sm-0">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+											value="option2">
+											<label class="form-check-label" for="inlineRadio2">I'm Buying</label>
+										</div>
+										<div class="form-check form-check-inline ml-lg-2 ml-md-0 ml-sm-0">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+											value="option3">
+											<label class="form-check-label" for="inlineRadio3">I'm Selling and Buying</label>
+										</div>
+									</form>
+
+								</div>
+
+								<div class="check-1 mt-3 ml-5">
+									<h6>I'm Selling</h6>
+									<form action="#">
+										<div class="checkbox-1">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+												<label class="form-check-label" for="inlineRadio4">a House</label>
+											</div>
+
+											<div class="form-check form-check-inline ml-5  ml-md-0 ml-sm-4">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5">
+												<label class="form-check-label" for="inlineRadio5">a Condominium +250$</label>
+											</div>
+										</div>
+										<div class="date-1 col-lg-7 col-md-6 col-sm-8 col-7 mt-2 ">									
+											<div class="input-group mb-3 ml-lg-3 ml-md-4 ml-sm-1">
+												<input type="text" class="form-control ml-3 ml-md-1" placeholder="Possession Date" aria-label="Recipient's username">
+
+											</div>
+											<span class="calender"><i class="fa fa-calendar"></i></span>
+											<div class="sure form-check form-check-inline ml-5 ml-md-4 ml-sm-2">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6">
+												<label class="form-check-label " for="inlineRadio6">Not Sure</label>
+											</div>
+										</div>
+									</form>
+								</div>
+
+								<div class="package check-1 ml-5">
+									<h6>Package</h6>
+									<div class="popup" id="popup-1">
+										<div class="overlay"></div>
+										<div class="content">	
+											<div class="wrap">
+												<div class="close-btn" onclick="togglePopup()">&times;</div>
+												<div class="head">
+													<h2 class="title1">Packages</h2>
+												</div>
+
+												<div class="row ml-1">
+													<div class="col col-xs-12">
+														<div class="package1">
+															<div class="grid">
+																<div class="content1">
+																	<div class="button1 btn1">Good</div>
+																	<div class="price1 mt-2">
+																		<P>$599 + GST</P>
+																	</div>
+																	<ul>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="grid">
+																<div class="content1">
+																	<div class="button1 btn2">Better</div>
+																	<div class="price1 mt-2">
+																		<P>$599 + GST</P>
+																	</div>
+																	<ul>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																	</ul>
+																</div>
+															</div>
+															<div class="grid">
+																<div class="content1">
+																	<div class="button1 btn3">Best</div>
+																	<div class="price1 mt-2">
+																		<P>$599 + GST</P>
+																	</div>
+																	<ul>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																		<li>Package details</li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<button onclick="togglePopup()">i</button>
+									<form action="#">
+										<div class="form-check form-check-inline">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio7" value="option7">
+											<label class="form-check-label" for="inlineRadio7">good</label>
+										</div>
+
+										<div class="form-check form-check-inline ml-lg-0 ml-md-3 ml-sm-5">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio8" value="option8">
+											<label class="form-check-label" for="inlineRadio8">Better</label>
+										</div>
+
+										<div class="form-check form-check-inline ml-lg-0 ml-md-3 ml-sm-4">
+											<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio9" value="option9">
+											<label class="form-check-label" for="inlineRadio9">Best</label>
+										</div>
+										<div class="amount line form-check-inline">
+											<p>$599 + GST</p>
+											<p class=" ml-md-5 ml-sm-5">$999 + GST</p>
+											<p class=" ml-md-5 ml-sm-4">$1299 + GST</p>
+										</div>
+									</form>
+								</div>
+
+								<div class="check-1 mt-3 ml-5">
+									<h6>I'm Buying</h6>
+									<form action="#">
+										<div class="checkbox-1">
+											<div class="form-check form-check-inline">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio10" value="option10">
+												<label class="form-check-label" for="inlineRadio10">a House</label>
+											</div>
+
+											<div class="form-check form-check-inline ml-5  ml-md-0 ml-sm-4">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio11" value="option11">
+												<label class="form-check-label" for="inlineRadio11">a Condominium</label>
+											</div>
+										</div>
+										<div class="date-1 col-lg-7 col-md-6 col-sm-8 col-7 mt-2 ">									
+											<div class="input-group mb-3 ml-lg-3 ml-md-4 ml-sm-2">
+												<input type="text" class="form-control ml-3 ml-md-1" placeholder="Possession Date" aria-label="Recipient's username">
+
+											</div>
+											<span class="calender"><i class="fa fa-calendar"></i></span>
+											<div class="sure form-check form-check-inline ml-5 ml-md-4 ml-sm-2">
+												<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio12" value="option12">
+												<label class="form-check-label " for="inlineRadio12">Not Sure</label>
+											</div>
+										</div>
+									</form>
+								</div>
+
+							</li>
+						</ul>
+					</li>
+
+
+					<li>
+						<div class="link">
+							<i class="fa fa-handshake-o" aria-hidden="true"></i>
+							<h3>Client-Lawyer relationship</h3>
+						</div>
+						<ul class="submenu second mb-3">
+							<p >The Law Society of Alberta requires is, in our role...</p>
+							<h6 class="choose">Your Current Residential Information</h6>
+							<span >Home Address</span>
+							<div class="row address-form ml-2">
+								<div class="col-md-11">
+									<form class="row">
+										<div class="form-row align-items-center">
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder=" Street number">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Street name">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName"
+												placeholder="Unit/Apartment Number">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="City">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Province">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Postal Code">
+											</div>
+
+											<div class="col-md-6 col-sm-8 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName"
+												placeholder="Home phone number" onkeyup="numberonly(this)">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<h6 class="mt-3">Your Current Work Information</h6>
+							<div class="row address-form ml-2">
+								<div class="col-md-12">
+									<form class="row">
+										<div class="form-row align-items-center">
+											<div class="col-md-4 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName"
+												placeholder=" Occupations (s)">
+											</div>
+											<div class="col-md-7 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder=" Business Name">
+											</div>
+											<div class=" ml-2">
+												<input type="text" class="form-control d-none" id="inlineFormInputName" placeholder=" Business Name">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<span class="ml-0">Business Address</span>
+							<div class="row address-form ml-2">
+								<div class="col-md-11">
+									<form class="row">
+										<div class="form-row align-items-center">
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder=" Street number">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Street name">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName"
+												placeholder="Unit/Apartment Number">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="City">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Province">
+											</div>
+
+											<div class="col-md-4 col-sm-6 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName" placeholder="Postal Code">
+											</div>
+
+											<div class="col-md-6 col-sm-8 col-10 my-1">
+												<input type="text" class="form-control" id="inlineFormInputName"
+												placeholder="Business phone number" onkeyup="numberonly(this)">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</ul>
+					</li>
+					<li>
+						<div class="link">
+							<i class="fa fa-money" aria-hidden="true"></i>
+							<h3>Payment</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="button mt-2">
+				<a href="#" class="btn btn-large btn1 mr-4">Cancel</a>
+				<a href="#" class="btn btn-large btn2">submit</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="matter.js"></script>
+</body>
+</html>
